@@ -1,0 +1,115 @@
+.navbar {
+    min-height: 4rem;
+    background-color: #348a3c;
+}
+.container a {
+    text-decoration: none;
+    color: #d8d4d4 !important;
+    font-family: verdana;
+}
+.container a:hover, .container a.active{
+    color: white !important;
+}
+form {
+    width: 18rem;
+    margin: auto;
+    padding: 3rem 1rem 1rem;
+}
+form label {
+    display: block;
+    margin-top: 0.5rem;
+}
+form input {
+    width: 95%;
+    margin-top: 1px;
+}
+#pages button, dialog #close {
+    margin: 0.5rem 0;
+    /* display: block; */
+}
+.btn-info, .btn-info:focus {
+    color: white;
+}
+
+form select, input[type="date"] {
+    /* width: 95%; */
+    margin-bottom: 0.8rem;
+}
+h2 {
+    text-align: center;
+}
+thead {
+    background-color: navajowhite;
+}
+tbody tr:hover{
+    background-color: #fbe0bdd1;
+}
+form p {
+    color: red;
+}
+a {
+    text-decoration: none;
+}
+#pages button {
+    margin-right: 6px;
+    transition: height 0.1s;
+}
+.btn-outline-success, .btn-outline-danger {
+    line-height: 0.5rem;
+    width: min-content;
+}
+.dropdown-menu {
+    min-width: max-content;
+}
+#pages button.active {
+    height: 2.5rem;
+    background-color: navajowhite;
+    border: none;
+    outline: none;
+}
+#pages button:focus, #pages button:hover {
+    outline: none;
+    border: none;
+    background-color: navajowhite;
+}
+#leaderboard li {
+    list-style: none;
+}
+#plus {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 4%;
+    right: 6%;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px #888888;
+    z-index: 1;
+}
+#plus span {
+    position: absolute;
+    font-size: 3rem;
+    right: 23%;
+    bottom: 2%;
+}
+dialog {
+    border-radius: 4px;
+    border: none;
+    background-color: whitesmoke;
+}
+dialog form {
+    border-radius: 4px;
+    background-color: white;
+}
+#close {
+    position: absolute;
+    top: -5px;
+    right: 2px;
+    width: fit-content;
+    height: min-content;
+    border: none;
+    background-color: rgb(232, 67, 67);
+    color: white;
+    outline: none;
+}

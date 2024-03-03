@@ -1,0 +1,70 @@
+.navbar {
+    min-height: 4rem;
+    background-color: #3fa349;
+}
+.container a {
+    text-decoration: none;
+    color: #d8d4d4 !important;
+    font-family: verdana;
+}
+.container a:hover, .container a.active{
+    color: white !important;
+}
+div {
+    margin: auto;
+    width: fit-content;
+}
+table {
+    margin: 1rem auto;
+    border: 3px solid antiquewhite;
+    background-color: #f7c465;
+}
+#downloadBtn {
+    position: fixed;
+    bottom: 3rem;
+    right: 6rem;
+    border: 1px solid wheat;
+    padding: 0.4rem;
+    background-color: #3fa349;
+    color: white;
+    cursor: pointer;
+}
+#downloadIcon {
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background-color: white;
+}
+#downloadIcon i {
+    color: #3fa349;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+#view {
+    border: none;
+    background-color: #dce9f6;
+    /* font-size: 1.2rem; */
+    outline: none;
+}
+#view,
+#daily label {
+    font-size: 1.2rem;
+}
+#year {
+    width: fit-content;
+}
+td[align] {
+    position: relative;
+    right: 2rem;
+}
+a {
+    text-decoration: none;
+    color: #d8d4d4;
+    font-family: verdana;
+}

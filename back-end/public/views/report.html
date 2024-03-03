@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./sources/report.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top">
+        <div class="container">
+            <a href="expense.htm">Dashboard</a>
+            <a href="#" class="active">Report</a>
+            <a role="button">Logout</a>
+    </nav>
+    </div>
+    <div class="container premium pt-3 d-none">
+        <p class="lead">
+            This is a premium feature. Generates expense reports based on date, month,
+            year and also custom date range. To start using this feature, click on
+            the button below.
+        </p>
+        <p class="text-center">
+            <button class="btn btn-outline-secondary btn-sm" id="premiumBtn">
+                Buy Premium
+            </button>
+        </p>
+    </div>
+    <div class="mt-4 d-none">
+        <select name="order" id="view" class="ms-md-0 ms-2">
+            <option>DAILY</option>
+            <option>WEEKLY</option>
+            <option selected>MONTHLY</option>
+
+        </select>
+        <label>EXPENSES</label><br /><br />
+        <input type="date" name="date" id="date" class="d-none ms-md-0 ms-3" />
+        <span id="week" class="d-none ms-md-0 ms-2">
+            <input type="date" name="start" id="start" value="" />
+            <label>to</label>
+            <input type="date" name="end" id="end" value="" />
+        </span>
+        <input type="month" name="month" id="month" class="ms-md-0 ms-3" />
+        <input class="ms-md-0 ms-2 mt-2" type="button" id="report" value="View" style="line-height: 1.35rem;" />
+        <table id="shortTerm" class="table">
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Expense (in ₹)</th>
+            </tr>
+        </table>
+        <label for="year">Search by Year:</label>
+        <input type="number" min="1965" max="2200" name="year" id="year" value="2024">
+        <table id="annual" class="table">
+            <tr>
+                <th>Month</th>
+                <th>Expense (in ₹)</th>
+            </tr>
+        </table>
+        <button class="btn d-md-block d-none rounded-pill" id="downloadBtn">Download</button>        
+        <span class="d-md-none" id="downloadIcon" title="Download report">
+            <i class="bi bi-arrow-down-circle-fill d-flex"></i>
+        </span>
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="./sources/report.js"></script>
+</body>
+
+</html>
